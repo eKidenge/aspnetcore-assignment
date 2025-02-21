@@ -1,3 +1,76 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<div class="container">
+    <!-- Navigation Links -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Queue Management</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Summary -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Active Users</h5>
+                    <p class="card-text">123</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success">
+                <div class="card-body">
+                    <h5 class="card-title">Active Queues</h5>
+                    <p class="card-text">45</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-warning">
+                <div class="card-body">
+                    <h5 class="card-title">Open Tickets</h5>
+                    <p class="card-text">78</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activities -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Recent Activities</h3>
+            <ul class="list-group">
+                <li class="list-group-item">User John Doe joined Queue #5</li>
+                <li class="list-group-item">Queue #3 resolved 10 tickets</li>
+                <li class="list-group-item">New user registered: Jane Smith</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Queue Management Buttons -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <button class="btn btn-primary">Create New Queue</button>
+            <button class="btn btn-success">Manage Queues</button>
+            <button class="btn btn-warning">View Reports</button>
+        </div>
+    </div>
+
+    <!-- Placeholder for Charts -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Queue Statistics</h3>
+            <p>(Graph/Chart Placeholder - Can integrate later)</p>
+        </div>
+    </div>
+</div>
+
